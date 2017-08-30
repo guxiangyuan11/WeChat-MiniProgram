@@ -1,0 +1,4 @@
+/* app.wxss */
+text{
+  font-family:  MicroSoft Yahei;
+}

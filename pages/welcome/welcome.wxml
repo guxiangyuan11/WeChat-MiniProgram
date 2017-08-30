@@ -1,0 +1,8 @@
+<view class="contaniner">
+   <image class="user-avatar" src="/images/2.jpg"></image>
+   <!--只有被text包围的才能在真机环境下长按选中 -->
+   <text class="user-name">Hello,guxiangyuan</text>
+   <view class="moto" bindtap="onTap">
+      <text>开启小程序</text>
+   </view>
+</view>
