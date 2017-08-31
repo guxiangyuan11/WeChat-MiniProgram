@@ -9,3 +9,5 @@
 
 <image src="https://raw.githubusercontent.com/guxiangyuan11/IMAGE/master/images/gif/%E7%94%B5%E5%BD%B1%E9%A1%B5%E9%9D%A2.gif">
 
+
+<image src="https://raw.githubusercontent.com/guxiangyuan11/IMAGE/master/images/gif/%E7%94%B5%E5%BD%B1%E8%AF%A6%E6%83%85%E9%A1%B5.gif">
