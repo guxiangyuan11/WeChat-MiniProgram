@@ -1,37 +1,25 @@
 const app = getApp();
-const util = require("../../util/util.js")
+// const util = require("../../util/util.js")
+import {Movie} from "classMovie/movie.js";
 Page({
   data: {
-  
+    movie:""
   },
   onLoad: function (options) {
   const id = options.movieid;
   const url = app.globalData.doubanbase + "/v2/movie/subject/" + id;
-  this.processDoubanData(url);
+  let movie = new Movie(url);
+  movie.getMovieData((movies)=>{
+    this.setData({
+      movie: movies
+    });
+    console.log(this.data.movie);
+   });
   },
-  processDoubanData(url){
-    wx.showLoading({
-      title: 'Loading',
-      mask: true
-    })
-    wx.request({
-      url: url,
-      method: "get",
-      header: {
-        "content-Type": "application/xml"
-      },
-      success(res) {
-        var data = res.data;
-        console.log(data)
-        wx.hideLoading();
-      },
-      fail(err) {
-        wx.showToast({
-          title: '请检查网络是否链接',
-          icon: 'loading',
-          duration: 2000
-        })
-      }
+  viewMoviePostImg(e){
+    const src = e.currentTarget.dataset.src;
+    wx.previewImage({
+      urls: [src],
     })
   }
 })

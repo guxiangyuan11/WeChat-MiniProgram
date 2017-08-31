@@ -97,6 +97,12 @@ Page(
         this.setData({ movies:totalMovies });
         this.data.totalCount += 20;
       });
+    },
+    onMovieTap(e) {
+      let movieid = e.currentTarget.dataset.movieid;
+      wx.navigateTo({
+        url: '../movie-detail/movie-detail?movieid=' + movieid
+      })
     }
   }
 )
