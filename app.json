@@ -11,10 +11,10 @@
     "navigationBarBackgroundColor": "#405f80",
     "navigationBarTitleText": "❤开"
   },
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
-        "pagePath":"pages/posts/posts",
+        "pagePath": "pages/posts/posts",
         "text": "阅读",
         "iconPath": "images/tab/yuedu.png",
         "selectedIconPath": "/images/tab/yuedu_hl.png"
@@ -22,10 +22,11 @@
       {
         "pagePath": "pages/movies/movies",
         "text": "电影",
-        "iconPath":"images/tab/dianying.png",
-        "selectedIconPath":"images/tab/dianying_hl.png"
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
       }
-      ],
-      "borderStyle": "white"
-  }
+    ],
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
 }

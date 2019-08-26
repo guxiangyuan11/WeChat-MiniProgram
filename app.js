@@ -1,6 +1,6 @@
 App({
   globalData:{
-    doubanbase:"https://api.douban.com"
+    doubanbase:"https://douban.uieee.com"
   },
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
